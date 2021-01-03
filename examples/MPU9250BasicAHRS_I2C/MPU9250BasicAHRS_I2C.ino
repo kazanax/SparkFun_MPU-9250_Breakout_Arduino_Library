@@ -85,7 +85,7 @@ void setup()
   mcp2515.reset();
   mcp2515.setBitrate(CAN_SPEED);
   mcp2515.setNormalMode();
-  Serial.print("CAN Bus in normal mode");
+  Serial.print("CAN Bus in normal mode ");
   
   // Read the WHO_AM_I register, this is a good test of communication
   byte c = myIMU.readByte(MPU9250_ADDRESS, WHO_AM_I_MPU9250);
